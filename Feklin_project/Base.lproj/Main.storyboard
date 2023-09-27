@@ -16,19 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFw-v1-cGc">
-                                <rect key="frame" x="20" y="44" width="374" height="396"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwt-d4-AKw">
-                                <rect key="frame" x="20" y="465" width="374" height="397"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwt-d4-AKw">
+                                <rect key="frame" x="35" y="473" width="346" height="348"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFw-v1-cGc">
+                                <rect key="frame" x="35" y="75" width="346" height="358"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="exB-IC-SFN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lwt-d4-AKw" firstAttribute="leading" secondItem="exB-IC-SFN" secondAttribute="leading" constant="35" id="AFl-sK-ivH"/>
+                            <constraint firstItem="hFw-v1-cGc" firstAttribute="leading" secondItem="exB-IC-SFN" secondAttribute="leading" constant="35" id="MQt-JM-Kar"/>
+                            <constraint firstItem="exB-IC-SFN" firstAttribute="trailing" secondItem="hFw-v1-cGc" secondAttribute="trailing" constant="33" id="Qxq-Pq-Xpo"/>
+                            <constraint firstItem="hFw-v1-cGc" firstAttribute="top" secondItem="exB-IC-SFN" secondAttribute="top" constant="31" id="Wk8-VM-srq"/>
+                            <constraint firstItem="lwt-d4-AKw" firstAttribute="top" secondItem="hFw-v1-cGc" secondAttribute="bottom" constant="40" id="apD-Wq-nl0"/>
+                            <constraint firstItem="exB-IC-SFN" firstAttribute="bottom" secondItem="lwt-d4-AKw" secondAttribute="bottom" constant="41" id="dpY-yD-BW2"/>
+                            <constraint firstItem="hFw-v1-cGc" firstAttribute="height" secondItem="lwt-d4-AKw" secondAttribute="height" multiplier="1.02874" id="el5-ci-wcB"/>
+                            <constraint firstItem="exB-IC-SFN" firstAttribute="trailing" secondItem="lwt-d4-AKw" secondAttribute="trailing" constant="33" id="jhg-VR-5iR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
